@@ -1,0 +1,40 @@
+.header {
+    background-image: linear-gradient(#001053 0%, #0F76B5 36%, #69BAE8);
+    height: 900px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    @media (max-width:767px) {
+        height: 600px;
+    }
+
+    &__title {
+        padding-top: 50px;
+        color: #fff;
+        text-align: center;
+        font-family: 'happy';
+        font-size: 100px;
+        font-weight: 100;
+
+        @media (max-width:767px) {
+            font-size: 60px;
+        }
+    }
+    
+    &__text {
+        color: #fff;
+        margin-top: 108px;
+        font-size: 50px;
+
+        @media (max-width:767px) {
+            width: 200px;
+            font-size: 20px;
+        }
+    }
+}
+
+.aniversario{
+    font-weight: 100;
+    color: #00FFEA;
+}

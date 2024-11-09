@@ -1,0 +1,187 @@
+.header {
+  text-align: center;
+  background-image: linear-gradient(#001053 0%, #0f76b5 36%, #69bae8);
+  justify-content: center;
+  height: 900px;
+  display: flex;
+}
+
+@media (width <= 767px) {
+  .header {
+    height: 600px;
+  }
+}
+
+.header__title {
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  font-family: happy;
+  font-size: 100px;
+  font-weight: 100;
+}
+
+@media (width <= 767px) {
+  .header__title {
+    font-size: 60px;
+  }
+}
+
+.header__text {
+  color: #fff;
+  margin-top: 108px;
+  font-size: 50px;
+}
+
+@media (width <= 767px) {
+  .header__text {
+    width: 200px;
+    font-size: 20px;
+  }
+}
+
+.aniversario {
+  color: #00ffea;
+  font-weight: 100;
+}
+
+.presente {
+  background-image: linear-gradient(316deg, #300147, #2d0248, #001053);
+  width: 100%;
+}
+
+.presente__cima__image {
+  width: 100%;
+  position: absolute;
+  top: 600px;
+}
+
+@media (width <= 640px) {
+  .presente__cima__image {
+    top: 510px;
+  }
+}
+
+@media (width >= 641px) and (width <= 768px) {
+  .presente__cima__image {
+    top: 700px;
+  }
+}
+
+@media (width >= 1024px) and (width <= 1128px) {
+  .presente__cima__image {
+    top: 700px;
+  }
+}
+
+.presente__cima {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.presente__cima__dentro {
+  justify-items: center;
+  margin-top: 500px;
+}
+
+@media (width <= 640px) {
+  .presente__cima__dentro {
+    margin-top: 100px;
+  }
+}
+
+@media (width >= 641px) and (width <= 768px) {
+  .presente__cima__dentro {
+    margin-top: 200px;
+  }
+}
+
+.presente__cima__dentro__title {
+  color: #ff3232;
+  font-family: Roboto, serif;
+  font-size: 81px;
+}
+
+@media (width <= 640px) {
+  .presente__cima__dentro__title {
+    font-size: 30px;
+  }
+}
+
+.presente__cima__dentro__text {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+@media (width <= 640px) {
+  .presente__cima__dentro__text {
+    width: 70%;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
+
+.contagem {
+  color: #00ffea;
+  margin-top: 75px;
+  font-family: Roboto, serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+@media (width <= 640px) {
+  .contagem {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+.presente__aviso {
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 100px;
+  font-family: Roboto, serif;
+  font-size: 12px;
+  display: flex;
+}
+
+@media (width <= 640px) {
+  .presente__aviso {
+    font-size: 9px;
+  }
+}
+
+.presente__baixo {
+  background-image: linear-gradient(#001053 0%, #0f76b5 36%, #69bae8);
+}
+
+.presente__baixo__image {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #69bae8;
+}
+
+.text {
+  font-family: Pacifico, cursive;
+}
+
+@font-face {
+  font-family: happy;
+  src: url("../Silver Christmas - Personal Use.6d5c603c.otf");
+}
+/*# sourceMappingURL=main.css.map */
