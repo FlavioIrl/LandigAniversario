@@ -1,5 +1,7 @@
 @use 'header';
 @use 'presente';
+@use 'infos-bar';
+@use 'eventos';
 
 * {
     margin: 0;
@@ -8,8 +10,24 @@
     max-width: 100%;
 }
 
+
+
 body {
     background-color: #69BAE8;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
 }
 
 .text {
