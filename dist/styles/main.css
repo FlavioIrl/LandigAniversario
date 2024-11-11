@@ -29,13 +29,16 @@
 
 .header__text {
   color: #fff;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
   margin-top: 108px;
   font-size: 50px;
+  display: flex;
 }
 
 @media (width <= 767px) {
   .header__text {
-    width: 200px;
     font-size: 20px;
   }
 }
@@ -45,71 +48,71 @@
   font-weight: 100;
 }
 
-.presente {
-  background-image: linear-gradient(316deg, #300147, #2d0248, #001053);
+.present {
+  background-image: linear-gradient(316deg, #640394, #2d0248, #001053);
   width: 100%;
 }
 
-.presente__cima__image {
+.present__top__image {
   width: 100%;
   position: absolute;
   top: 600px;
 }
 
 @media (width <= 640px) {
-  .presente__cima__image {
+  .present__top__image {
     top: 510px;
   }
 }
 
 @media (width >= 641px) and (width <= 768px) {
-  .presente__cima__image {
+  .present__top__image {
     top: 700px;
   }
 }
 
 @media (width >= 1024px) and (width <= 1128px) {
-  .presente__cima__image {
+  .present__top__image {
     top: 700px;
   }
 }
 
-.presente__cima {
+.present__top {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.presente__cima__dentro {
+.present__top__inside {
   justify-items: center;
   margin-top: 500px;
 }
 
 @media (width <= 640px) {
-  .presente__cima__dentro {
+  .present__top__inside {
     margin-top: 100px;
   }
 }
 
 @media (width >= 641px) and (width <= 768px) {
-  .presente__cima__dentro {
+  .present__top__inside {
     margin-top: 200px;
   }
 }
 
-.presente__cima__dentro__title {
+.present__top__inside__title {
   color: #ff3232;
   font-family: Roboto, serif;
   font-size: 81px;
 }
 
 @media (width <= 640px) {
-  .presente__cima__dentro__title {
+  .present__top__inside__title {
     font-size: 30px;
   }
 }
 
-.presente__cima__dentro__text {
+.present__top__inside__text {
   color: #fff;
   text-align: center;
   margin-top: 100px;
@@ -118,29 +121,14 @@
 }
 
 @media (width <= 640px) {
-  .presente__cima__dentro__text {
+  .present__top__inside__text {
     width: 70%;
     margin-top: 30px;
     font-size: 20px;
   }
 }
 
-.contagem {
-  color: #00ffea;
-  margin-top: 75px;
-  font-family: Roboto, serif;
-  font-size: 50px;
-  font-weight: bolder;
-}
-
-@media (width <= 640px) {
-  .contagem {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-}
-
-.presente__aviso {
+.present__notice {
   color: #fff;
   justify-content: space-between;
   align-items: center;
@@ -153,14 +141,28 @@
 }
 
 @media (width <= 640px) {
-  .presente__aviso {
+  .present__notice {
     font-size: 9px;
   }
 }
 
-.presente__baixo {
+.present__bottom__image {
   background-image: linear-gradient(#001053 0%, #0f76b5 36%, #69bae8);
   width: 100%;
+}
+
+#contador {
+  color: #00ffea;
+  font-family: Roboto, serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+@media (width <= 640px) {
+  #contador {
+    margin-top: 20px;
+    font-size: 20px;
+  }
 }
 
 .infos-bar {
@@ -176,7 +178,7 @@
   text-align: center;
   white-space: nowrap;
   background-color: #47076e;
-  padding: 12px;
+  padding: 16px;
   font-family: Roboto, serif;
   font-size: 18px;
   font-weight: bold;
@@ -211,40 +213,81 @@
   .infos-bar__infos__item {
     margin-bottom: 24px;
   }
+
+  .infos-bar__button {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (width <= 1024px) {
   .infos-bar__infos {
     gap: 16px;
   }
+
+  .infos-bar__button {
+    align-items: center;
+    display: flex;
+  }
 }
 
-.evento {
+.event {
   padding: 80px 0;
   font-family: Roboto, serif;
 }
 
-.evento--image-left .container {
+.event--image-left .container {
   flex-direction: row-reverse;
 }
 
-.evento .container {
+.event .container {
   gap: 40px;
   display: flex;
 }
 
-.evento__item {
+@media (width <= 640px) {
+  .event .container {
+    display: block;
+  }
+
+  .event__image {
+    width: 50%;
+  }
+
+  .event__details {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
+
+.event__item {
   color: #fff;
 }
 
-.evento__item__title {
+.event__item__image {
+  max-width: 360px;
+}
+
+.event__item__title {
   margin-bottom: 16px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.evento__item__imagem {
-  max-width: 360px;
+.event__item__description {
+  line-height: 22px;
+}
+
+.local {
+  background-image: linear-gradient(#69bae8, #312289);
+}
+
+.comida {
+  background-image: linear-gradient(#312289, #1d0c7c 30%, #510077);
+}
+
+.aniversariante {
+  background-image: linear-gradient(#510077, #b32044, #f04f10);
 }
 
 * {

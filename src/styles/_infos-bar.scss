@@ -4,13 +4,15 @@
     display: flex;
     justify-content: space-between;
     background-color: #fff;
+
+    
     
     &__button {
         color: #fff;
         text-decoration: none;
         background-color: #47076e;
         text-align: center;
-        padding: 12px;
+        padding: 16px;
         font-size: 18px;
         font-weight: bold;
         font-family: "Roboto", serif;
@@ -19,6 +21,8 @@
         &:hover {
             background-color: #6c12a3;
         }
+    
+        
     }
 
     &__infos {
@@ -47,11 +51,21 @@
                 margin-bottom: 24px;
             }
         }
+
+        &__button {
+            display: block; 
+            width: 100%;
+        }
     }
 
     @media (max-width: 1024px) {
         &__infos {
             gap: 16px;
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
         }
     }
 }

@@ -26,9 +26,13 @@
         color: #fff;
         margin-top: 108px;
         font-size: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+
 
         @media (max-width:767px) {
-            width: 200px;
             font-size: 20px;
         }
     }
