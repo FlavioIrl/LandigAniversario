@@ -29,9 +29,7 @@
             justify-items: center;
     
             @media (max-width:640px) {
-                .present__top__inside {
-                    margin-top: 140px;
-                }
+                margin-top: 160px;
             }
             @media (min-width: 641px) and (max-width: 768px) {
                 margin-top: 230px;
